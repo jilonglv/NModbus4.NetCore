@@ -1,14 +1,14 @@
-﻿using System;
-using System.Diagnostics;
-using System.IO.Ports;
-using Modbus.IO;
-
-namespace Modbus.Serial
+﻿namespace Modbus.Serial
 {
+    using System;
+    using System.Diagnostics;
+    using System.IO.Ports;
+
+
     /// <summary>
     ///     Concrete Implementor - http://en.wikipedia.org/wiki/Bridge_Pattern
     /// </summary>
-    public class SerialPortAdapter : IStreamResource
+    public class SerialPortAdapter : IO.IStreamResource
     {
         private const string NewLine = "\r\n";
         private SerialPort _serialPort;

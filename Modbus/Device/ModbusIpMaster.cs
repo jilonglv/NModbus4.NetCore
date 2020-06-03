@@ -1,13 +1,10 @@
-﻿using Modbus.Serial;
-
-namespace Modbus.Device
+﻿namespace Modbus.Device
 {
     using System;
     using System.Diagnostics.CodeAnalysis;
-#if SERIAL
+//#if SERIAL
     using System.IO.Ports;
-    
-#endif
+//#endif
     using System.Net.Sockets;
     using System.Threading.Tasks;
 
@@ -63,7 +60,7 @@ namespace Modbus.Device
             return CreateIp(new UdpClientAdapter(udpClient));
         }
 
-#if SERIAL
+//#if SERIAL
         /// <summary>
         ///     Modbus IP master factory method.
         /// </summary>
@@ -76,9 +73,9 @@ namespace Modbus.Device
                 throw new ArgumentNullException(nameof(serialPort));
             }
 
-            return CreateIp(new SerialPortAdapter(serialPort));
+            return CreateIp(new Serial.SerialPortAdapter(serialPort));
         }
-#endif
+//#endif
 
         /// <summary>
         ///     Modbus IP master factory method.

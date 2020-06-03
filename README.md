@@ -1,3 +1,5 @@
+# Support
+netstandard2.0+
 # NModbus4.NetCore
 
 This library is driven from this library https://github.com/NModbus4/NModbus4
