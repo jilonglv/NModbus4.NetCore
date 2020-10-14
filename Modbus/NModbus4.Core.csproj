@@ -4,6 +4,7 @@
     <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <!--<GeneratePackageOnBuild>true</GeneratePackageOnBuild>-->
     <PackageId>NModbus4.Core</PackageId>
+    <AssemblyName>NModbus4.Core</AssemblyName>
     <Authors>jilonglv</Authors>
     <Description>This library is driven from this library https://github.com/NModbus4/NModbus4. It just target .NET Core instead of .NET Framework</Description>
     <PackageProjectUrl>https://github.com/jilonglv/NModbus4.NetCore</PackageProjectUrl>
